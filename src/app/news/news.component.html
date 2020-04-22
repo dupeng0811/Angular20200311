@@ -1,0 +1,19 @@
+<p>news works!</p>
+<h2>{{title}}</h2>
+<div [title]="title">
+    div title 
+</div>
+
+<div>
+    <h2>绑定HTML</h2>
+    <div [innerHTML]="content">{{content}}</div>
+    <div>{{content}}</div>
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="let item of students">
+            {{item.name}} ---{{item.age}}
+        </li>
+    </ul>
+</div>
